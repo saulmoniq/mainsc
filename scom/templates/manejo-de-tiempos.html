@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block head %}
+<script src="https://kit.fontawesome.com/d6418d4463.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="{% static 'manejo-camaras.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<!-- 3ra pasos -->
+<div class="banner center">
+    <h2 class="">Buscar horarios específicos de grabación</h2>
+</div>
+
+<div class="full-container " style="height: auto!important;">
+
+    <div class="column a" style="height: auto!important;">
+        <div class="inner-bg">
+            <h1 class="main-title center">Paso 1</h1>
+       <p class="paragraph">Deberás acceder a la cónsola de reproducción, para ello haz click derecho sobre la cámara y selecciona "Reproducción" </p>
+            </div>
+    </div>
+    <div class="column a"  style="height: auto!important;" >
+        <div class="inner-bg">
+            <h1 class="main-title center">Paso 2</h1>
+         <p class="paragraph">Luego, verás la cónsola, en el apartado derecho podrás seleccionar las cámaras que quieras revisar al mismo tiempo, que se irán añadiendo a tu vista central. </p>
+        </div>
+    </div>
+    <div class="column a" style="height: auto!important;" >
+        <div class="inner-bg">
+            <h1 class="main-title center">Paso 3</h1>
+            <p class="paragraph">Luego de seleccionar las cámaras deberás usar la barra inferior para retroceder el tiempo o adelantarlo, podrás ir a cualquier momento del día simplemente deslizando el cursor. </p>
+        </div>
+    </div>
+
+</div>
+
+<video width="500" height="400" controls> <source src="{% static '41-repro.mp4' %}" type="video/mp4"></video>
+    <video width="500" height="400" controls><source src="{% static '42-repro.mp4' %}" type="video/mp4"></video>
+    
+<!-- banner -->
+
+<div class="banner center">
+    <h2 class="">Cámara lenta o rápida</h2>
+</div>
+<div class="full-container" >
+    <div class="column a" >
+        <div class="inner">
+            <h1 class="main-title" style="text-align: left;">Selecciona la velocidad de reproducción</h1>
+            <p class="paragraph">Siguiendo los pasos anteriores, deberás acceder a la cónsola de reproducción.
+                Dentro de ella, selecciona las cámaras que desees visualizar.
+                Por último, da click en el apartado de reproducir por cuadros, disminuyendo cada vez más la velocidad de la grabación.
+                Si deseas acelerar, el proceso es el mismo, así podrás revisar largos periodos de grabación de manera muy rápida. </p>
+            <video width="500" height="400" controls><source src="{% static '5-slow.mp4' %}" type="video/mp4"></video>
+       
+            </div>
+    </div>
+    <div class="column b">
+        <div class="inner">
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

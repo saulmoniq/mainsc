@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block head %}
+<script src="https://kit.fontawesome.com/d6418d4463.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="{% static 'manejo-camaras.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="banner center">
+    <h2 class="">Manejo de cámaras</h2>
+</div>
+
+<!-- banner -->
+<div class="full-container">
+    <div class="column a">
+        <div class="inner">
+            <h1 class="main-title" style="text-align: left;">Cómo operar la cónsola de supervisión de cámaras</h1>
+            <p class="paragraph">
+                Lo primero es aprender a operar la cónsola de revisión, ella funciona a modo de cuadrados que puedes activar o desactivar dependiendo de la cantidad de cámaras que desees ver al mismo tiempo.
+                El sistema ofrece funciones para organizar las cámaras en: 2+2, 1+5, 1+7, 3*3 y 4*4. Cada una dicta cuántas cámaras deseas ver activa al mismo tiempo.
+                En el video inferior se detalla el proceso para escoger el orden, deberás hacer click derecho / cámara múltiple y escoger la opción que desees.
+            </p> <br>
+            <video width="500" height="400" controls>
+                <source src="{% static '1-operar-consola.mp4' %}" type="video/mp4"></video>
+        </div>
+    </div>
+    <div class="column b">
+        <div class="inner">
+        </div>
+    </div>
+</div>
+
+<!-- segunda sección -->
+<div class="full-container">
+    <div class="column c">
+        <div class="inner">
+        </div>
+    </div>
+    <div class="column a">
+        <div class="inner">
+            <h1 class="main-title" style="text-align: left;">Aplicar filtros a la imagen</h1>
+            <p class="paragraph">
+                Los filtros son útiles para mejorar la imágenes y alcanzar a ver detalles que a primera vista no era posible ver. Los filtros se aplican haciendo click sobre la cámara que se quiera modificar.
+            El siguiente paso es clickear el ícono blanco "Ajustes de imágen" y se abrirá el recuadro de edición, en ella tendrás 6 opciones a aplicar:
+                Brillo, contraste, corrección de color,niveles, profundidad, y sombras. También podrás volver al por defecto en caso de ser necesario.     </p> <br>
+            <video width="500" height="400" controls>
+                <source src="{% static '2-filtros.mp4' %}" type="video/mp4"></video>
+            </div>
+    </div>
+</div>
+
+<!-- 3ra pasos -->
+<div class="banner center">
+    <h2 class="">Cómo mover cámaras de ángulo de posición</h2>
+</div>
+
+<div class="full-container">
+
+    <div class="column a">
+        <div class="inner-bg">
+            <h1 class="main-title center">Paso 1</h1>
+            <p class="paragraph">Lo primero es hacer click sobre la cámara que deseas rotar, seleccionando el ícono inferior mostrado en el vídeo. </p> <br>          
+            </div>
+    </div>
+    <div class="column a">
+        <div class="inner-bg">
+            <h1 class="main-title center">Paso 2</h1>
+            <p class="paragraph">Luego, deberás hacer click en configuración y tendrás el pánel de movimiento en el lado izquierdo. </p> <br>
+        </div>
+    </div>
+    <div class="column a">
+        <div class="inner-bg">
+            <h1 class="main-title center">Paso 3</h1>
+            <p class="paragraph">Ella rotará en el orden en donde pises el panel, también podrás enfocar o añadir zoom en caso de necesitarlo.
+                *Algunas cámaras del sistema no son compatibles con esta función.          </p>
+        </div>
+    </div>
+    <video width="500" height="400" controls><source src="{% static '3-mover-camaras.mp4' %}" type="video/mp4"></video>
+</div>
+
+{% endblock %}

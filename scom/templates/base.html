@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    {% block head %}
+    {% endblock %}
+    {% load static %}
+
+</head>
+<body>
+    <header class="header">
+        <div class="container logo-nav-container">
+            <a href="{% url 'home' %}" class="logo"><img width="40px" src="{% static 'security-camera.png' %}"></a>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="{% url 'manejoCamaras' %}">Manejo de cámaras</a></li>
+                    <li><a href="{% url 'manejoTiempos' %}">Tiempos de grabación</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+{% block content %}
+{% endblock %}
+<header class="header">
+    <div class="container">
+        <a href="{% url 'home' %}" class="center"><img width="40px" src="{% static 'security-camera.png' %}"></a>
+        <p class="center"> Diseñado por Saúl Monique</p>
+    </div>
+</header>
+</body>
+</html>
